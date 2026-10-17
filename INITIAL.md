@@ -6,11 +6,13 @@
 
 ## PRODUCT
 
-**Name:** [Your product name]
+**Name:** Marketplace Listing Generator 
 
-**Description:** [What does it do? Who is it for?]
+**Description:** What it does: The seller enters a product name and a few key details. The tool uses AI to write a ready-to-paste listing: an SEO-friendly title, five bullet points, a product description and search keywords, formatted to each marketplace’s rules. It can also produce the listing in Hindi, Tamil and other Indian languages.
 
-**Type:** SaaS / Marketplace / Platform / API
+Who it’s for: Small and new sellers on Amazon, Flipkart, Meesho and Shopify who list many products, don’t have a copywriter, and lose sales because their listings are poorly written or don’t show up in search. It also suits resellers, small D2C brands, and agencies that manage catalogs for multiple sellers.
+
+**Type:** SaaS
 
 ---
 

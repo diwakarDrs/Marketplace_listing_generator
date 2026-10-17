@@ -1,0 +1,21 @@
+# Usage: docker-compose -f docker-compose.yml -f docker-compose.dev.yml up --build
+services:
+  backend:
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+    volumes:
+      - ./backend:/app
+    restart: "no"
+
+  frontend:
+    build:
+      context: ./frontend
+      target: build
+    command: npm run dev -- --host 0.0.0.0 --port 3000
+    environment:
+      VITE_API_URL: ${VITE_API_URL:-http://localhost:8000}
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports: !override
+      - "3000:3000"
+    restart: "no"
