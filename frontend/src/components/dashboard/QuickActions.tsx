@@ -1,4 +1,4 @@
-import { Heading, SimpleGrid, Text } from '@chakra-ui/react'
+import { Heading, HStack, SimpleGrid, Text } from '@chakra-ui/react'
 import { Link as RouterLink } from 'react-router-dom'
 import { GlassCard } from '../ui'
 
@@ -19,9 +19,14 @@ export function QuickActions() {
       {ACTIONS.map((a) => (
         <RouterLink key={a.to} to={a.to}>
           <GlassCard h="full">
-            <Heading size="md" color="purple.700">
-              {a.title}
-            </Heading>
+            <HStack justify="space-between">
+              <Heading size="md" color="purple.700">
+                {a.title}
+              </Heading>
+              <Text color="pink.500" fontSize="xl" aria-hidden="true">
+                →
+              </Text>
+            </HStack>
             <Text mt="1" fontSize="sm" color="gray.600">
               {a.description}
             </Text>
