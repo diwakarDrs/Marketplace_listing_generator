@@ -5,17 +5,20 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import { ListingToaster } from './components/listings/ListingToaster'
 import { AuthProvider } from './context/AuthContext'
+import { ColorModeProvider } from './context/ColorModeContext'
 import { system } from './theme'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ChakraProvider value={system}>
-      <ListingToaster />
-      <BrowserRouter>
-        <AuthProvider>
-          <App />
-        </AuthProvider>
-      </BrowserRouter>
+      <ColorModeProvider>
+        <ListingToaster />
+        <BrowserRouter>
+          <AuthProvider>
+            <App />
+          </AuthProvider>
+        </BrowserRouter>
+      </ColorModeProvider>
     </ChakraProvider>
   </StrictMode>,
 )

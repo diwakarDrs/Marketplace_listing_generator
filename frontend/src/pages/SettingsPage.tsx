@@ -100,12 +100,12 @@ export default function SettingsPage() {
             <Flex align="center" gap="3">
               <GradientButton onClick={onSave}>Save preferences</GradientButton>
               {status === 'saved' ? (
-                <Text color="green.600" fontSize="sm" role="status">
+                <Text color="green.fg" fontSize="sm" role="status">
                   Saved
                 </Text>
               ) : null}
               {status === 'failed' ? (
-                <Text color="red.600" fontSize="sm" role="alert">
+                <Text color="red.fg" fontSize="sm" role="alert">
                   Could not save on this browser
                 </Text>
               ) : null}
@@ -113,11 +113,11 @@ export default function SettingsPage() {
           </Flex>
         </GlassCard>
 
-        <Box p="6" rounded="2xl" borderWidth="1px" borderColor="red.300" bg="red.50">
-          <Heading size="md" color="red.700" mb="1">
+        <Box p="6" rounded="2xl" borderWidth="1px" borderColor="red.muted" bg="red.subtle">
+          <Heading size="md" color="red.fg" mb="1">
             Danger zone
           </Heading>
-          <Text fontSize="sm" color="gray.700" mb="4">
+          <Text fontSize="sm" color="fg" mb="4">
             These actions are not available yet.
           </Text>
           <Flex gap="3" wrap="wrap">

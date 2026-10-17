@@ -14,7 +14,7 @@ export function RecentListings({ listings, isLoading = false }: RecentListingsPr
       <Flex justify="space-between" align="center" mb="4">
         <Heading size="md">Recent listings</Heading>
         <RouterLink to="/listings">
-          <Text fontSize="sm" color="purple.600" fontWeight="semibold">
+          <Text fontSize="sm" color="accent" fontWeight="semibold">
             View all
           </Text>
         </RouterLink>
@@ -26,7 +26,7 @@ export function RecentListings({ listings, isLoading = false }: RecentListingsPr
           <Skeleton h="10" />
         </Flex>
       ) : listings.length === 0 ? (
-        <Text color="gray.600" fontSize="sm">
+        <Text color="fg.muted" fontSize="sm">
           Your generated listings will appear here.
         </Text>
       ) : (
@@ -38,7 +38,7 @@ export function RecentListings({ listings, isLoading = false }: RecentListingsPr
                   <Text fontWeight="medium" lineClamp={1}>
                     {l.title}
                   </Text>
-                  <Text fontSize="xs" color="gray.600" textTransform="capitalize">
+                  <Text fontSize="xs" color="fg.muted" textTransform="capitalize">
                     {l.marketplace} · {new Date(l.created_at).toLocaleDateString()}
                   </Text>
                 </Box>

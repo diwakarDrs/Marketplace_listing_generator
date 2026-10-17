@@ -67,7 +67,7 @@ export default function ListingsPage() {
             </Alert.Root>
           ) : listings.data.items.length === 0 ? (
             <Stack align="center" py={10} gap={3}>
-              <Text color="gray.600">No listings found.</Text>
+              <Text color="fg.muted">No listings found.</Text>
               <Button asChild colorPalette="purple" variant="outline">
                 <RouterLink to="/generate">Generate your first listing</RouterLink>
               </Button>

@@ -87,7 +87,7 @@ export function SellerForm({ initial, submitLabel, onSubmit }: SellerFormProps) 
           <Input value={language} onChange={(e) => setLanguage(e.target.value)} placeholder="e.g. en" />
         </Field.Root>
         {submitError && (
-          <Text color="red.600" role="alert">
+          <Text color="red.fg" role="alert">
             {submitError}
           </Text>
         )}

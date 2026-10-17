@@ -22,12 +22,12 @@ export function SellerCard({ seller, onDelete }: SellerCardProps) {
         </HStack>
         {seller.brand_name && <Text fontWeight="medium">{seller.brand_name}</Text>}
         {seller.brand_voice && (
-          <Text color="gray.600" lineClamp={2}>
+          <Text color="fg.muted" lineClamp={2}>
             {seller.brand_voice}
           </Text>
         )}
         {seller.default_language && (
-          <Text fontSize="sm" color="gray.500">
+          <Text fontSize="sm" color="fg.subtle">
             Language: {seller.default_language}
           </Text>
         )}

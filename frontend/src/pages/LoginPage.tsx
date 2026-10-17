@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Center, Heading, Link, Separator, Spinner, Stack, Text } from '@chakra-ui/react'
 import { Link as RouterLink, Navigate, useLocation, useNavigate } from 'react-router-dom'
 import { MeshBackground } from '../components/layout'
-import { GlassCard } from '../components/ui'
+import { ColorModeToggle, GlassCard } from '../components/ui'
 import { LoginForm } from '../components/auth/LoginForm'
 import { GoogleLoginButton } from '../components/auth/GoogleLoginButton'
 import { useAuth } from '../hooks/useAuth'
@@ -52,22 +52,23 @@ export default function LoginPage() {
   return (
     <Center minH="100vh" px={4}>
       <MeshBackground />
+      <ColorModeToggle position="fixed" top={4} right={4} />
       <GlassCard w="full" maxW="md">
         <Stack gap={5}>
           <Stack gap={1}>
             <Heading as="h1" size="2xl">Welcome back</Heading>
-            <Text color="gray.600">Sign in to your account</Text>
+            <Text color="fg.muted">Sign in to your account</Text>
           </Stack>
           <LoginForm initialError={oauthError} />
           <Stack direction="row" align="center" gap={3}>
             <Separator flex="1" />
-            <Text fontSize="sm" color="gray.500">or</Text>
+            <Text fontSize="sm" color="fg.subtle">or</Text>
             <Separator flex="1" />
           </Stack>
           <GoogleLoginButton />
           <Text fontSize="sm" textAlign="center">
             No account yet?{' '}
-            <Link asChild color="purple.600">
+            <Link asChild color="accent">
               <RouterLink to="/register">Create one</RouterLink>
             </Link>
           </Text>

@@ -20,14 +20,14 @@ export function QuickActions() {
         <RouterLink key={a.to} to={a.to}>
           <GlassCard h="full">
             <HStack justify="space-between">
-              <Heading size="md" color="purple.700">
+              <Heading size="md" color="accentStrong">
                 {a.title}
               </Heading>
               <Text color="pink.500" fontSize="xl" aria-hidden="true">
                 →
               </Text>
             </HStack>
-            <Text mt="1" fontSize="sm" color="gray.600">
+            <Text mt="1" fontSize="sm" color="fg.muted">
               {a.description}
             </Text>
           </GlassCard>

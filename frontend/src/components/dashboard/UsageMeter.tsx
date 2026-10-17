@@ -30,7 +30,7 @@ export function UsageMeter({ usage, isLoading = false }: UsageMeterProps) {
               <Progress.Range />
             </Progress.Track>
           </Progress.Root>
-          <Text mt="3" fontSize="sm" color="gray.600">
+          <Text mt="3" fontSize="sm" color="fg.muted">
             {used} of {limit} generations used ({usage.period})
           </Text>
         </Box>

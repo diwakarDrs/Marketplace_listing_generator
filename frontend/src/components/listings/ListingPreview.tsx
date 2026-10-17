@@ -22,7 +22,7 @@ function Section({ label, copyText, children, counter }: SectionProps) {
   return (
     <Box>
       <HStack justify="space-between" mb={1}>
-        <Text fontSize="xs" fontWeight="bold" textTransform="uppercase" color="gray.500">
+        <Text fontSize="xs" fontWeight="bold" textTransform="uppercase" color="fg.subtle">
           {label}
         </Text>
         <HStack gap={2}>

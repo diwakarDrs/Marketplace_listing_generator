@@ -14,7 +14,7 @@ export function ErrorView({ message, onRetry }: { message: string; onRetry?: () 
   return (
     <GlassCard>
       <VStack gap={3}>
-        <Text color="red.600" role="alert">
+        <Text color="red.fg" role="alert">
           {message}
         </Text>
         {onRetry && (
@@ -32,7 +32,7 @@ export function EmptyView({ title, description, action }: { title: string; descr
     <GlassCard>
       <VStack gap={3} py={8}>
         <Heading size="md">{title}</Heading>
-        <Text color="gray.600" textAlign="center">
+        <Text color="fg.muted" textAlign="center">
           {description}
         </Text>
         {action}

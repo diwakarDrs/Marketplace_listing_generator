@@ -21,7 +21,7 @@ export function GoogleLoginButton({ label = 'Continue with Google' }: GoogleLogi
     window.location.assign(GOOGLE_AUTH_URL)
   }
   return (
-    <Button type="button" variant="outline" w="full" rounded="full" bg="white" onClick={handleClick}>
+    <Button type="button" variant="outline" w="full" rounded="full" bg="glass" onClick={handleClick}>
       <GoogleIcon />
       {label}
     </Button>

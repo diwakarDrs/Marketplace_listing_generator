@@ -15,7 +15,7 @@ export function MarketplaceBars({ data }: MarketplaceBarsProps) {
         Listings by marketplace
       </Heading>
       {entries.length === 0 ? (
-        <Text color="gray.600" fontSize="sm">
+        <Text color="fg.muted" fontSize="sm">
           No listings yet.
         </Text>
       ) : (
@@ -26,7 +26,7 @@ export function MarketplaceBars({ data }: MarketplaceBarsProps) {
                 <Text textTransform="capitalize">{name}</Text>
                 <Text fontWeight="semibold">{count}</Text>
               </Flex>
-              <Box h="2" rounded="full" bg="blackAlpha.100">
+              <Box h="2" rounded="full" bg="trackBg">
                 <Box
                   h="2"
                   rounded="full"

@@ -102,7 +102,7 @@ export function EditableListing({ listing, rules, saving, onSave }: EditableList
         <FieldHeader label="Keywords (comma separated)" value={keywordList.join(', ')} />
         <Textarea value={keywords} rows={2} autoresize onChange={(e) => setKeywords(e.currentTarget.value)} />
         {rules && keywordList.some((k) => Array.from(k).length > rules.keyword_max_length) && (
-          <Field.HelperText color="orange.600">
+          <Field.HelperText color="orange.fg">
             Some keywords exceed {rules.keyword_max_length} characters.
           </Field.HelperText>
         )}

@@ -128,7 +128,7 @@ export default function ListingDetailPage() {
               <Badge>{meta.data?.languages.find((l) => l.code === listing.language)?.name ?? listing.language}</Badge>
               <Badge colorPalette={listing.status === 'final' ? 'green' : 'gray'}>{listing.status}</Badge>
               {listing.model_used && (
-                <Text fontSize="xs" color="gray.500">
+                <Text fontSize="xs" color="fg.subtle">
                   {listing.model_used}
                 </Text>
               )}

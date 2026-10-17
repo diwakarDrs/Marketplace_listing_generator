@@ -22,7 +22,7 @@ export function ListingsList({ listings }: { listings: Listing[] }) {
                   <Badge colorPalette={l.status === 'final' ? 'green' : 'gray'}>{l.status}</Badge>
                 </HStack>
               </HStack>
-              <Text fontSize="sm" color="gray.500">
+              <Text fontSize="sm" color="fg.subtle">
                 {l.language} - {new Date(l.created_at).toLocaleDateString()}
               </Text>
             </VStack>

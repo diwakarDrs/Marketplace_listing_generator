@@ -26,7 +26,7 @@ export function SearchBar({ value, onChange, placeholder = 'Search products...' 
       placeholder={placeholder}
       aria-label="Search"
       maxLength={SEARCH_MAX_LENGTH}
-      bg="whiteAlpha.800"
+      bg="glass"
       rounded="full"
     />
   )

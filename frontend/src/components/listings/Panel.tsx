@@ -5,10 +5,10 @@ export function Panel({ children, ...rest }: BoxProps) {
     <Box
       p={6}
       rounded="2xl"
-      bg="whiteAlpha.700"
+      bg="glass"
       backdropFilter="blur(16px)"
       borderWidth="1px"
-      borderColor="whiteAlpha.600"
+      borderColor="glassBorder"
       shadow="xl"
       {...rest}
     >

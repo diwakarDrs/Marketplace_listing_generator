@@ -104,7 +104,7 @@ export function ProductForm({ initial, submitLabel, onSubmit }: ProductFormProps
           <FeatureListInput value={features} onChange={setFeatures} />
         </Field.Root>
         {submitError && (
-          <Text color="red.600" role="alert">
+          <Text color="red.fg" role="alert">
             {submitError}
           </Text>
         )}

@@ -2,6 +2,7 @@ import { Box, Flex, HStack, Text } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import { NavLink, Outlet } from 'react-router-dom'
 import { useAuth } from '../../hooks/useAuth'
+import { ColorModeToggle } from '../ui/ColorModeToggle'
 import { GradientButton } from '../ui/GradientButton'
 import { MeshBackground } from './MeshBackground'
 
@@ -36,10 +37,10 @@ export function AppLayout() {
         py={3}
         align="center"
         justify="space-between"
-        bg="whiteAlpha.800"
+        bg="glass"
         backdropFilter="blur(16px) saturate(160%)"
         borderBottomWidth="1px"
-        borderColor="purple.100"
+        borderColor="navBorder"
         shadow="0 4px 24px -12px rgba(124, 58, 237, 0.3)"
       >
         <HStack gap={6} wrap="wrap">
@@ -47,7 +48,7 @@ export function AppLayout() {
             fontWeight="extrabold"
             fontSize="xl"
             letterSpacing="-0.02em"
-            bgImage="linear-gradient(120deg, #7e22ce, #db2777, #f59e0b)"
+            bgImage="var(--grad-text)"
             bgSize="200% auto"
             animation="gradientShift 6s ease infinite"
             bgClip="text"
@@ -64,8 +65,8 @@ export function AppLayout() {
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.97 }}
                   fontWeight={isActive ? 'bold' : 'medium'}
-                  color={isActive ? 'purple.600' : 'gray.700'}
-                  _hover={{ color: 'purple.500' }}
+                  color={isActive ? 'accent' : 'fg'}
+                  _hover={{ color: 'accent' }}
                 >
                   {item.label}
                   {isActive ? (
@@ -85,9 +86,12 @@ export function AppLayout() {
             </NavLink>
           ))}
         </HStack>
-        <GradientButton size="sm" onClick={logout}>
-          Log out
-        </GradientButton>
+        <HStack gap={3}>
+          <ColorModeToggle />
+          <GradientButton size="sm" onClick={logout}>
+            Log out
+          </GradientButton>
+        </HStack>
       </Flex>
       <Box as="main" px={6} py={8} maxW="7xl" mx="auto">
         <Outlet />

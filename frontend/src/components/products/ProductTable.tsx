@@ -9,7 +9,7 @@ interface ProductTableProps {
 
 export function ProductTable({ products, onDelete }: ProductTableProps) {
   return (
-    <Box overflowX="auto" rounded="2xl" bg="whiteAlpha.800" borderWidth="1px" borderColor="whiteAlpha.600">
+    <Box overflowX="auto" rounded="2xl" bg="glass" borderWidth="1px" borderColor="glassBorder">
       <Table.Root>
         <Table.Header>
           <Table.Row>
@@ -25,7 +25,7 @@ export function ProductTable({ products, onDelete }: ProductTableProps) {
             <Table.Row key={p.id}>
               <Table.Cell>
                 <Link to={`/products/${p.id}`}>
-                  <Text fontWeight="semibold" color="purple.600">
+                  <Text fontWeight="semibold" color="accent">
                     {p.name}
                   </Text>
                 </Link>

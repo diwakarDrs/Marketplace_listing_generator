@@ -29,10 +29,10 @@ export function ListingTable({ listings, productNames, marketplaces, languages }
         </Table.Header>
         <Table.Body>
           {listings.map((l) => (
-            <Table.Row key={l.id} _hover={{ bg: 'purple.50' }}>
+            <Table.Row key={l.id} _hover={{ bg: 'rowHover' }}>
               <Table.Cell maxW="360px">
                 <RouterLink to={`/listings/${l.id}`}>
-                  <Text color="purple.700" fontWeight="medium" lineClamp={2}>
+                  <Text color="accentStrong" fontWeight="medium" lineClamp={2}>
                     {l.title || 'Untitled listing'}
                   </Text>
                 </RouterLink>

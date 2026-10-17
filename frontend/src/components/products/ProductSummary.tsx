@@ -11,7 +11,7 @@ export function ProductSummary({ product }: { product: Product }) {
           <Heading size="lg">{product.name}</Heading>
           {product.price !== null && <Badge colorPalette="green" fontSize="md">{product.price.toFixed(2)}</Badge>}
         </HStack>
-        <HStack gap={4} wrap="wrap" color="gray.600">
+        <HStack gap={4} wrap="wrap" color="fg.muted">
           {product.category && <Text>Category: {product.category}</Text>}
           {product.brand && <Text>Brand: {product.brand}</Text>}
         </HStack>

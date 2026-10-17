@@ -14,7 +14,7 @@ export function PagePlaceholder({ title, description }: PagePlaceholderProps) {
         <Heading size="lg" mb={2}>
           {title}
         </Heading>
-        <Text color="gray.600">{description ?? 'This page is under construction.'}</Text>
+        <Text color="fg.muted">{description ?? 'This page is under construction.'}</Text>
       </GlassCard>
     </PageWrapper>
   )

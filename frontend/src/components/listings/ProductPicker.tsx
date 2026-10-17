@@ -99,12 +99,12 @@ export function ProductPicker({ value, onChange, label = 'Product', allowAll }: 
         <NativeSelect.Indicator />
       </NativeSelect.Root>
       {failed && (
-        <Text fontSize="sm" color="red.600">
+        <Text fontSize="sm" color="red.fg">
           Could not load products.
         </Text>
       )}
       {!loading && !failed && results.length === 0 && (
-        <Text fontSize="sm" color="gray.500">
+        <Text fontSize="sm" color="fg.subtle">
           {term ? 'No products match your search.' : 'No products yet. Create a product first.'}
         </Text>
       )}

@@ -27,7 +27,7 @@ export function RegenerateDialog({ open, loading, onClose, onConfirm }: Regenera
               <Dialog.Title>Regenerate listing</Dialog.Title>
             </Dialog.Header>
             <Dialog.Body>
-              <Text mb={3} color="gray.600" fontSize="sm">
+              <Text mb={3} color="fg.muted" fontSize="sm">
                 This replaces the current content and uses one generation from your quota. Your manual edits will be lost.
               </Text>
               <Field.Root>

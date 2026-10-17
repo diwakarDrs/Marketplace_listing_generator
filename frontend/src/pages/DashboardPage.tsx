@@ -27,9 +27,9 @@ export default function DashboardPage() {
         ) : null}
 
         {isNewUser ? (
-          <Box p="8" rounded="2xl" bg="whiteAlpha.700" textAlign="center">
+          <Box p="8" rounded="2xl" bg="glass" textAlign="center">
             <Heading size="lg">Welcome aboard</Heading>
-            <Text mt="2" color="gray.600">
+            <Text mt="2" color="fg.muted">
               Add your first product and generate a listing to get started.
             </Text>
             <RouterLink to="/products/new">

@@ -74,7 +74,7 @@ export default function GeneratePage() {
             <LanguageSelect languages={languages} value={language} onChange={setLanguage} />
           </SimpleGrid>
           {selectedRules && (
-            <Text mt={3} fontSize="sm" color="gray.600">
+            <Text mt={3} fontSize="sm" color="fg.muted">
               Limits: title {selectedRules.title_max_length} chars, {selectedRules.bullet_count} bullets of up to{' '}
               {selectedRules.bullet_max_length} chars, description up to {selectedRules.description_max_length} chars.
             </Text>
@@ -92,7 +92,7 @@ export default function GeneratePage() {
               <Spinner color="purple.500" size="lg" />
               <Box>
                 <Text fontWeight="semibold">Writing your listing...</Text>
-                <Text fontSize="sm" color="gray.600">
+                <Text fontSize="sm" color="fg.muted">
                   This can take up to 30 seconds. Please keep this page open.
                 </Text>
               </Box>

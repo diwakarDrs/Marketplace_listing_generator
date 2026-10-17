@@ -34,7 +34,7 @@ export function StatCard({ label, value, isLoading = false }: StatCardProps) {
       }}
     >
       <Stat.Root>
-        <Stat.Label color="gray.600" fontWeight="medium" textTransform="uppercase" letterSpacing="wider" fontSize="xs">
+        <Stat.Label color="fg.muted" fontWeight="medium" textTransform="uppercase" letterSpacing="wider" fontSize="xs">
           {label}
         </Stat.Label>
         {isLoading ? (
@@ -43,7 +43,7 @@ export function StatCard({ label, value, isLoading = false }: StatCardProps) {
           <Stat.ValueText
             fontSize="4xl"
             fontWeight="extrabold"
-            bgImage="linear-gradient(120deg, #7e22ce, #db2777)"
+            bgImage="var(--grad-stat)"
             bgClip="text"
             color="transparent"
           >

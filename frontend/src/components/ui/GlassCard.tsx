@@ -19,12 +19,12 @@ export function GlassCard({ children, whileHover = { y: -4, scale: 1.01 }, ...re
       position="relative"
       p={6}
       rounded="2xl"
-      bg="whiteAlpha.800"
+      bg="glass"
       backdropFilter="blur(18px) saturate(160%)"
       borderWidth="1px"
-      borderColor="whiteAlpha.700"
+      borderColor="glassBorder"
       shadow="0 10px 30px -12px rgba(124, 58, 237, 0.25)"
-      _hover={{ shadow: '0 24px 48px -16px rgba(168, 85, 247, 0.45)', borderColor: 'purple.200' }}
+      _hover={{ shadow: '0 24px 48px -16px rgba(168, 85, 247, 0.45)', borderColor: 'glassHoverBorder' }}
       {...rest}
     >
       {children}
