@@ -17,6 +17,14 @@ from dataclasses import dataclass, field
 
 LANGUAGES: dict[str, str] = {
     "en": "English",
+    "hi": "Hindi",
+    "ta": "Tamil",
+    "te": "Telugu",
+    "kn": "Kannada",
+    "ml": "Malayalam",
+    "bn": "Bengali",
+    "mr": "Marathi",
+    "gu": "Gujarati",
 }
 
 
