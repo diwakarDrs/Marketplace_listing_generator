@@ -8,7 +8,7 @@ ARG VITE_API_URL=http://localhost:8000
 ENV VITE_API_URL=$VITE_API_URL
 RUN npm run build
 
-FROM nginxinc/nginx-unprivileged:1.27-alpine AS runtime
+FROM nginxinc/nginx-unprivileged:1.31-alpine AS runtime
 # API origin allowed in CSP connect-src; override at runtime via API_ORIGIN.
 ENV API_ORIGIN=http://localhost:8000
 # Rendered by the image entrypoint (envsubst) into /etc/nginx/conf.d/default.conf
